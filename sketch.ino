@@ -197,6 +197,17 @@ void scrollRandoms() {
   }
 }
 
+void countdown() {
+  for (int i = 60; i >= 0; i--) {
+    for (int j = 0; j < 49; j++) {
+      displayNumber(i);
+    }
+  }
+  for (int i = 0; i < 10; i++) {
+    scrollRandoms();
+  }
+}
+
 void loop() {
-  scrollRandoms();
+  countdown();
 }
